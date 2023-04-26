@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="secretariat.css">
+	<title></title>
+</head>
+<body>
+	<img src="Logo.JPG">
+	<h1>GESTION DES RENDEZ-VOUS</h1>
+	<h3> Inserez les informations</h3>
+
+	<div id="after_submit"></div>
+
+	<form id="contact_form" action="#" method="POST" enctype="mUltipart/form_data">
+
+		<div class="row">
+			<label class="required" for="name">Nom</label><br>
+			<input id="name" class="input" type="text" placeholder="Entrez votre nom" name="name" value="" size="30"><br>
+			<span id="name_validation" class="error_message"></span>
+		</div>
+
+		<div>
+			<label class="required" for="date">Date</label><br>
+			<input type="date" name="date"><br>
+		</div>
+
+		<div>
+			<label class="required" for="time">horaire</label><br>
+			<input type="time" name="time"><br>
+		</div>
+
+		<div class="row">
+			<label class="required" for="email">Email</label><br>
+			<input id="email" class="input" type="text" placeholder="Entrez votre email" name="email" value="" size="30"><br>
+			<span id="email_validation" class="error_message"></span>
+		</div>
+
+		<div class="row">
+			<label class="required" for="Message">Message</label><br>
+			<textarea id="Message" class="input" placeholder="Entrez votre message" name="Message" rows="7" cols="30"></textarea><br>
+		</div>
+
+		<input id="submit_button" type="submit" value="Envoyer email">
+
+</body>
+</html>
